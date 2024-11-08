@@ -15,10 +15,6 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "one2N_domain" {
-  type = string
-}
-
 variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
