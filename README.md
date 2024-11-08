@@ -81,11 +81,11 @@ terraform apply
 
 This will create an S3 bucket to store the Terraform state files, a DynamoDB table for state locking, and a KMS key to encrypt the state file in S3, ensuring secure and consistent state management.
 
-![alt text](image.png)
+![alt text](images/image.png)
 DynamoDB Lock Table
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 KMS
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### 2. Setup AWS Lambda and Apigateway 
 
@@ -108,20 +108,20 @@ terraform apply
 
 ### AWS Lambda function
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ### API-GATEWAY
 Endpoint
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 Routes GET /list-bucket-content/{bucket}/{path+}
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 Lambda Integration
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 
 # TEST RESULTS
@@ -132,7 +132,7 @@ GET /list-bucket-content/one2n-terraform-state-files-bucket/
 ```
 https://szphjkqi23.execute-api.us-east-1.amazonaws.com/list-bucket-content/one2n-terraform-state-files-bucket/
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 
 ## For Route 2
@@ -141,7 +141,7 @@ GET /list-bucket-content/one2n-terraform-state-files-bucket/dir1/
 ```
 https://szphjkqi23.execute-api.us-east-1.amazonaws.com/list-bucket-content/one2n-terraform-state-files-bucket/dir1/
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 
 ## For Route 3
@@ -152,7 +152,7 @@ GET /list-bucket-content/wrong-bucket/
 ```
 https://szphjkqi23.execute-api.us-east-1.amazonaws.com/list-bucket-content/wrong-bucket/
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 
 ---
