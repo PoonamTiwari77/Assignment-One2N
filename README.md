@@ -156,8 +156,10 @@ https://szphjkqi23.execute-api.us-east-1.amazonaws.com/list-bucket-content/wrong
 
 
 ---
+# Cloudwatch Logs 
 
-<br>
+![alt text](images/image-10.png)
+
 
 # Final Note or Additional steps
 
